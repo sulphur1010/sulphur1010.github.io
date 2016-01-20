@@ -1,0 +1,179 @@
+
+
+<html>
+<body id = "overbg">
+
+
+<head>
+<style type="text/css">
+
+
+   .sidebar .widget-content {
+    padding: 15px;
+    background-color: #fff; 
+}
+   #overbg {
+    background: url('http://2.bp.blogspot.com/-YPvdD9wOJJI/VIHcW6_XvfI/AAAAAAAECPg/wTmEZXTZb9Y/s0/Burgundy-Lamour%2B%25282%2529.jpg');
+    overflow: hidden;
+}
+
+   .task-list {
+  width: 250px;
+  float: left;
+  margin: 0 5px;
+  background-color: #e3e3e3;
+  min-height: 240px;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+.task-todo {
+    margin-bottom: 10px;
+    background: url(https://lh3.googleusercontent.com/-Dm8yPXEZEb8/U2qdIaxbm4I/AAAAAAAAEEs/nNS9zkdI8UQ/h120/dot.png);
+}
+
+.task-list input, .task-list textarea {
+  width: 240px;
+  margin: 1px 5px;
+}
+
+.task-list input {
+  height: 30px;
+}
+
+.todo-task {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 230px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.task-list input[type="button"] {
+  width: 100px;
+  margin: 5px;
+}
+
+.todo-task > .task-header {
+  font-weight: bold;
+}
+
+.todo-task > .task-date {
+  color: #4F98D3;
+  font-size: small;
+  font-style: italic;
+}
+
+.todo-task > .task-description {
+	 color: #4F98D3;
+  font-size: smaller;
+}
+
+h3 {
+  text-align: center;
+}
+
+#delete-div {
+  background-color: #fff;
+  border: 3px dotted #000;
+  margin: 10px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}  
+  </style>
+
+
+<title>
+My TODO APP
+</title>
+</head>
+
+<div class="task-list" id="pending">
+  <h3 class= "task-todo">YET TO START</h3>
+  
+  <div class="todo-task">
+    <div class="task-header">Swimming</div>
+    <div class="task-date">25/01/2016</div>
+    <div class="task-description">Swimming</div>
+  </div>
+</div>
+
+<div class="task-list" id="inProgress">
+  <h3 class= "task-todo">In Progress</h3>
+
+  <div class="todo-task">
+    <div class="task-header">Movie</div>
+    <div class="task-date">21/01/2016</div>
+    <div class="task-description">Swimming</div>
+  </div>
+</div>
+
+<div class="task-list" id="completed">
+  <h3 class= "task-todo">Completed</h3>
+  <div class="todo-task">
+    <div class="task-header">Reading</div>
+    <div class="task-date">20/01/2016</div>
+    <div class="task-description">Swimming</div>
+  </div>
+</div>
+
+<div class="task-list">
+  <h3 class= "task-todo">Give new task</h3>
+  <form id="todo-form">
+    <input type="text" placeholder="Title" />
+    <textarea placeholder="Descrtipion"></textarea>
+    <input type="text" placeholder="Due Date (dd/mm/yyyy)" />
+    <input type="button" class="btn btn-primary" value="Add Task" />
+  </form>
+
+  <input type="button" class="btn btn-primary" value="Clear Data" />
+
+  <div id="delete-div">Drag Here to Delete</div>
+</div>
+
+
+
+<script type="text/javascript">
+$( document ).ready(function(){
+
+
+
+
+
+
+  $('.todo-task').on('scroll', function () {
+        $('.task-header').fadeIn(1200);
+    });
+
+    
+
+
+  
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+});
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
